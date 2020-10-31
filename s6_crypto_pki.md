@@ -1,4 +1,4 @@
-# **<span style="background-color:#b381b3">6.0 Cryptography and PKI</span>**
+# **<span style="color:white;background-color:#b381b3">6.0 Cryptography and PKI</span>**
 
 ## <span style="color:#b381b3">6.1 Compare and contrast basic concepts of cryptography.</span>
 

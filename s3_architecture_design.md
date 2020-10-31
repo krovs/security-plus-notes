@@ -1,4 +1,4 @@
-# **<span style="background-color:#d47500">3.0 Architecture and Design</span>**
+# **<span style="color:white;background-color:#d47500">3.0 Architecture and Design</span>**
 
 ## <span style="color:#d47500">3.1 Explain use cases and purpose for frameworks, best practices and secure configuration guides.</span>
 

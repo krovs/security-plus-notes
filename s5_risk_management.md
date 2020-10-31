@@ -1,4 +1,4 @@
-# **<span style="background-color:#e73c4e">5.0 Risk Management</span>**
+# **<span style="color:white;background-color:#e73c4e">5.0 Risk Management</span>**
 
 ## <span style="color:#e73c4e">5.1 Explain the importance of policies, plans and procedures related to organizational security.</span>
 

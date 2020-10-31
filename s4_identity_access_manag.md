@@ -1,4 +1,4 @@
-# **<span style="background-color:#00aa55">4.0 Identity and Access Management</span>**
+# **<span style="color:white;background-color:#00aa55">4.0 Identity and Access Management</span>**
 
 ##  <span style="color:#00aa55">4.1 Compare and contrast identity and access management concepts</span>
 
