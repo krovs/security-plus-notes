@@ -1,6 +1,6 @@
 # **<span style="color:white;background-color:#aa8f00">2.0 Technologies and Tools</span>**
 
-##  <span style="color:#aa8f00">2.1 Install and configure network components, both hardware and software-based, to support organizational security.</span>
+## <span style="color:#aa8f00">2.1 Install and configure network components, both hardware and software-based, to support organizational security.</span>
 
 1. **Firewall**: A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
     1. **ACL** (Access control lists): A list of rules that can be used to control traffic based on networks, subnets, IP addresses, ports, and some protocols.
