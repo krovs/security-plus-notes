@@ -14,15 +14,21 @@
 2. **VPN concentrator**: A type of router device that allows for the secure creation of VPN connections and for the safe delivery of messages between VPN nodes. Allows for the handling of a large quantity of VPN tunnels.
     1. Remote access vs. site-to-site:
         1. **Remote access**: A user-to-LAN connection used by remote users.
-        2. **Site-to-site**: Allows multiple sites to connect to remote sites over the internet.
+        2. **Site-to-site**: Allows multiple sites to connect to remote sites over the internet.  
+            ![image-20201104001033960](s2_techs_tools.assets/image-20201104001033960.png)
     2. **IPSec**: A protocol suite for securing Internet Protocol (IP) communications. Encrypts and authenticates all of the packets in a session between hosts or networks. Secures more applications than SSL and TLS.
         1. **Tunnel** mode: The default mode for IPSec, the entire pack is protected.
-        2. **Transport** mode: Used for end-to-end communications in IPSec. Ex. encrypted Telnet or Remote Desktop session from a workstation to a server.
-        3. **Authentication Header** (AH): IPsec protocol that authenticates that the packets received were sent from the source identified in the header. MD5, SHA-1 or SHA-2.
-        4. **ESP** (Encapsulating Security Payload): IPSec component that provides the same services as AH and also ensures confidentiality when sending data. MD5, SHA-1 or SHA-2 for hash, 3DES or AES for encryption.
+        2. **Transport** mode: Used for end-to-end communications in IPSec. Ex. encrypted Telnet or Remote Desktop session from a workstation to a server.  
+            ![image-20201104001507849](s2_techs_tools.assets/image-20201104001507849.png)
+        3. **Authentication Header** (AH): IPsec protocol that authenticates that the packets received were sent from the source identified in the header. MD5, SHA-1 or SHA-2.  
+            ![image-20201104001257913](s2_techs_tools.assets/image-20201104001257913.png)
+        4. **ESP** (Encapsulating Security Payload): IPSec component that provides the same services as AH and also ensures confidentiality when sending data. MD5, SHA-1 or SHA-2 for hash, 3DES or AES for encryption.  
+            ![image-20201104001327680](s2_techs_tools.assets/image-20201104001327680.png)
     3. Split tunnel vs. full tunnel:
-        1. **Split tunnel**: Only some traffic over the secure VPN while the rest of the traffic directly accesses the internet.
-        2. **Full tunnel**: All of the traffic is sent over the secure VPN.
+        1. **Split tunnel**: Only some traffic over the secure VPN while the rest of the traffic directly accesses the internet.  
+            ![image-20201104000928021](s2_techs_tools.assets/image-20201104000928021.png)
+        2. **Full tunnel**: All of the traffic is sent over the secure VPN.  
+            ![image-20201104000836217](s2_techs_tools.assets/image-20201104000836217.png)
     4. **TLS**: The replacement of SSL to encrypt data-in-transit. Uses certificates issued by CAs.
     5. **Always-on VPN**: The user does not connect and disconnect and instead is always connected.
 3. **NIPS** (Network Intrusion Prevention System)/**NIDS** (Network Intrusion Detection System):  
@@ -31,8 +37,10 @@ Watch network traffic.
     2. **Heuristic/behavioral**: It detects attacks by comparing traffic against a baseline to find any anomalies.
     3. **Anomaly**: Abnormal packets or traffic.
     4. Inline vs. passive:
-        1. **Inline**: Connected directly to the network and monitors the flow of data as it occurs.
-        2. **Passive**: Connected through a switch or port on the network and receives a copy of the flow of data as it occurs.
+        1. **Inline**: Connected directly to the network and monitors the flow of data as it occurs.  
+            ![image-20201104001659503](s2_techs_tools.assets/image-20201104001659503.png)
+        2. **Passive**: Connected through a switch or port on the network and receives a copy of the flow of data as it occurs.  
+            ![image-20201104001629524](s2_techs_tools.assets/image-20201104001629524.png)
     5. In-band vs. out-of-band:
         1. **In-band**: Sits in the network, can quickly warn of or prevent malicious traffic.
         2. **Out-of-band**: Can only warn of malicious traffic. When identifies it, sends reset frames.
@@ -52,11 +60,15 @@ Watch network traffic.
     4. **Flood guard**: Configuration that sets the maximum number of MAC addresses that could possibly be seen on any particular interface.
 6. **Proxy**: Acts as an intermediary for requests from clients seeking resources from servers that provide those resources.
     1. Forward and reverse proxy:
-        1. **Forward proxy**: Forwards requests from internal clients to external servers.
-        2. **Reverse proxy**: Takes in requests from the Internet and forwards them to an internal web server.
-    2. **Transparent**: Accepts and forwards requests without performing any modifications on them.
-    3. **Application/multipurpose**: A type of proxy server that knows the application protocols that it supports.
-7. **Load balancer**: A reverse proxy that distributes network or application traffic across a number of servers designed to increase capacity of concurrent users and reliability of applications.
+        1. **Forward proxy**: Forwards requests from internal clients to external servers.  
+            ![image-20201104001757451](s2_techs_tools.assets/image-20201104001757451.png)
+        2. **Reverse proxy**: Takes in requests from the Internet and forwards them to an internal web server.  
+            ![image-20201104001828109](s2_techs_tools.assets/image-20201104001828109.png)
+        3. **Transparent**: Accepts and forwards requests without performing any modifications on them.  
+            ![image-20201104002008955](s2_techs_tools.assets/image-20201104002008955.png)
+    2. **Application/multipurpose**: A type of proxy server that knows the application protocols that it supports.
+7. **Load balancer**: A reverse proxy that distributes network or application traffic across a number of servers designed to increase capacity of concurrent users and reliability of applications.  
+    ![image-20201104002047848](s2_techs_tools.assets/image-20201104002047848.png)
     1. **Scheduling**: Sends requests to servers using set rules.
         2. **Affinity**: Sends client requests to the same server based on the client's IP address.
         3. **Round-robin**: Sends requests in a predefined order.
@@ -89,17 +101,18 @@ Watch network traffic.
     2. **Cloud-based**: Prevents sensitive data from being stored on the cloud without proper encryptions and authorization.
     3. **Email**: Protects against email fraud and from valuable data from being sent through email.
 11. **NAC** (Network Access Control): Enforces security policies on devices that access networks to increase network visibility and reduce risk.
-    1. Dissolvable vs. permanent:
-        1. **Dissolvable**: Disappears after reporting information to the NAC device.
-        2. **Permanent**: Resides on end devices until uninstalled.
-    2. **Host health checks**: Reports sent by network access control to gather information on installeddevices.
-    3. Agent vs. agentless:
-        1. **Agent**: Is installed on the end device.
-        2. **Agentless**: Is not installed on the device itself but instead is embedded within a Microsoft Windows Active Directory domain controller.
-12. **Mail gateway**: Examines and processes all incoming and outgoing email.
-    1. **Spam filter**: An on-premises software solution for filtering, well spam emails.
-    2. **DLP** (Data Loss Prevention): Prevents certain information leaving the organization via email.
-    3. **Encryption**: Encrypt and decrypts emails being sent and received across networks.
+     1. Dissolvable vs. permanent:
+         1. **Dissolvable**: Disappears after reporting information to the NAC device.
+         2. **Permanent**: Resides on end devices until uninstalled.
+     2. **Host health checks**: Reports sent by network access control to gather information on installeddevices.
+     3. Agent vs. agentless:
+         1. **Agent**: Is installed on the end device.
+         2. **Agentless**: Is not installed on the device itself but instead is embedded within a Microsoft Windows Active Directory domain controller.
+12. **Mail gateway**: Examines and processes all incoming and outgoing email.  
+    ![image-20201104002237513](s2_techs_tools.assets/image-20201104002237513.png)
+     1. **Spam filter**: An on-premises software solution for filtering, well spam emails.
+     2. **DLP** (Data Loss Prevention): Prevents certain information leaving the organization via email.
+     3. **Encryption**: Encrypt and decrypts emails being sent and received across networks.
 13. **Bridge**: Provides interconnection with other bridge networks using the same protocol.
 14. **SSL/TLS accelerators**: The process of offloading processor-intensive public-key encryption for TLS or its SSL to a hardware accelerator.
 15. **SSL decryptors**: Allows for the user to view inside of passing Secure HTTP traffic.
