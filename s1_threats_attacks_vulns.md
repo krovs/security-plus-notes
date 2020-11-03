@@ -120,7 +120,7 @@
 3. **Pivot**: In penetration testing it is using a compromised machine to attack other machines on the same network. Attacking and gaining access to an area of lower security in order to be more likely to have a successful attack on an area of greater security. Is also referred to as island hopping.
 4. **Initial exploitation**: Usually the hardest part. A vulnerability is taken advantage of to get into the network or system.
 5. **Persistence**: Installing backdoors or methods to keep access to the host or networks.
-6. **Privilege escalation**: Allows for a user to get a higher-level access than what authentication allows for. Can be resolved through patching and updating. Typically related to a bug or vulnerability 
+6. **Privilege escalation**: Allows for a user to get a higher-level access than what authentication allows for. Can be resolved through patching and updating. Typically related to a bug or vulnerability.
 7. **Black box**: The pentester knows nothing about the network and  have no prior knowledge.
 8. **White box**: The pentester have full knowledge of the configurations allowing you to perform specific tests.
 9. **Gray box**: Some knowledge of the network; a mix of black and white.
