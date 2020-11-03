@@ -1,4 +1,4 @@
-# **<span style="color:white;background-color:#aa8f00">2.0 Technologies and Tools Install and configure network components</span>**
+# **<span style="color:white;background-color:#aa8f00">2.0 Technologies and Tools</span>**
 
 ##  <span style="color:#aa8f00">2.1 Install and configure network components, bot hardware and software-based, to support organizational security.</span>
 
