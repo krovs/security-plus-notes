@@ -23,8 +23,10 @@
 2. **Secure LDAP**: LDAP over SSL/TLS, uses TCP on port 636. Does not send queries in plain text.
 3. **Kerberos**: Developed by MIT, for mutual authorization between client and server. It uses a ticket granting system for authorization. Is a government standard.
 4. **TACACS**+ (Terminal Access Controller Access Control System): Runs TCP over port 49, encrypts all parts of communication. Does not suffer due to security issues caused by RADIUS. Authorization and Authentication are separated for granular control.
-5. **CHAP** (Challenge Handshake Authentication Protocol): Authenticates PPP clients to the server. Uses a one-way hash based on a shared secret that is compared on the client and server end. Does not send plaintext over the wire.
-6. **PAP** (Password Authentication Protocol): Username and password are sent as plaintext and are no longer used.
+5. **CHAP** (Challenge Handshake Authentication Protocol): Authenticates PPP clients to the server. Uses a one-way hash based on a shared secret that is compared on the client and server end. Does not send plaintext over the wire.  
+    ![image-20201105234308889](s4_identity_access_manag.assets/image-20201105234308889.png)
+6. **PAP** (Password Authentication Protocol): Username and password are sent as plaintext and are no longer used.  
+    ![image-20201105233941650](s4_identity_access_manag.assets/image-20201105233941650.png)
 7. **MS-CHAP** (Microsoft CHAP): Delivers a two-way, mutual authentication between the server and client. Separate keys are created for sent and received data. Is seen as weak due to it using a 5-bit encryption system, same as NTLM.
 8. **RADIUS** (Remote Authentication and Dial-in User service): Combines authentication and authorization, only encrypts the passwords, each network device must contain an authorization configuration. There is no command logging, and minimal vendor support. Uses ports 1812 for authentication and authorization and port 1813 for accounting functions.
 9. **SAML** (Security Association Markup Language): Authenticates through a third-party source to gain access, the resource is not responsible for the authentication. The request is passed through a trusted third-party server.
@@ -34,7 +36,7 @@
 12. **Shibboleth**: An open-source software that uses SAML to provide a third-party federated SSO authentication.
 13. **Secure token**: An authentication mechanism that can be used to identify and authenticate, and to deny and allow access.
 14. **NTLM** (New Technology LAN Manager): Used for authenticating in a Windows domain, was replaced by Kerberos for the most part.
-    1. NTMLv2: Is the most common form used, is somewhat insecure.
+     1. NTMLv2: Is the most common form used, is somewhat insecure.
 
 ## <span style="color:#00aa55">4.3 Given a scenario, implement identity and access management controls.</span>
 
