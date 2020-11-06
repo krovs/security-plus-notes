@@ -4,22 +4,27 @@
 
 1. **Symmetric algorithms**: A shared secret key used by the sender and receiver to encrypt and decrypt.
 2. **Modes of operation**: An algorithm that uses a block cipher to provide security such as confidentiality or authenticity.
-3. **Asymmetric algorithms**: There is a shared public key and a private secret key. Public key encrypts and the private key decrypts, private key to sign and public key verify.
+3. **Asymmetric algorithms**: There is a shared public key and a private secret key. Public key encrypts and the private key decrypts, private key to sign and public key verify.  
+    ![image-20201107003300472](s6_crypto_pki.assets/image-20201107003300472.png)
+    ![image-20201107002818599](s6_crypto_pki.assets/image-20201107002818599.png)
 4. **Hashing**: An algorithm that creates a unique one-way encryption, not plaintext.
 5. Salt, IV, nonce:
-    1. **Salt**: The adding of input to random data to function to make it more complicated. A small piece of data added to the end of a password when creating a hash
+    1. **Salt**: The adding of input to random data to function to make it more complicated. A small piece of data added to the end of a password when creating a hash.  
+       ![image-20201107003522154](s6_crypto_pki.assets/image-20201107003522154.png)
     2. **IV** (Initialization Vector): A random value used with an encryption key.
     3. **Nonce**: One-time use random value used for authentication.
 6. **Elliptic curve** (ECC): Great for low powered machines. Uses curves for encryption instead of large prime numbers.
 7. **Weak/deprecated algorithms**: Weak due to vulnerabilities (WEP) or weak key length (DES is on 56-bits) which is easy to brute force through.
 8. **Key exchange**: Securely sending keys back and forth. Out-of-Band where the key is sent over the phone, in person, or any other way offline. In-Band is sent over the internet encrypted.
-9. **Digital signatures**: Provides integrity, verifies that the original sender is actually the one who sent it. This can be done through asymmetric encryption, where there is a hash message then they will encrypt the hash using their private key, creating a digital signature that can only originate from them. To verify, the signature is decrypted with the public key, and the message is then hashed. If the two hashes match, then the digital signature is valid
+9. **Digital signatures**: Provides integrity, verifies that the original sender is actually the one who sent it. This can be done through asymmetric encryption, where there is a hash message then they will encrypt the hash using their private key, creating a digital signature that can only originate from them. To verify, the signature is decrypted with the public key, and the message is then hashed. If the two hashes match, then the digital signature is valid.  
+    ![image-20201107003354499](s6_crypto_pki.assets/image-20201107003354499.png)
+    ![image-20201107003408196](s6_crypto_pki.assets/image-20201107003408196.png)
 10. **Diffusion**: Changing one character causes the plaintext to drastically change the outputted cipher.
 11. **Confusion**: The cipher doesn’t look anything like the plain text.
 12. **Collision**: Two completely different pieces of data have the exact same hash.
 13. **Steganography**: Hides messages or code inside of an image or another type of data. Impossible to decipher without the correct tools.
 14. **Obfuscation**: Taking something and making it difficult for a human to understand, however it is not impossible to convert it back to the original form.
-15. **Stream vs. block**:
+15. **Stream vs. block**: Stream ciphers encrypt data 1 bit at a time (High speed). Block ciphers encrypt data in blocks.
 16. **Key strength**: Larger keys and more bits are signs of better encryption and stronger keys.
 17. **Session keys**: Symmetric keys used to provide a secure and fast online connection. The server’s public key is paired with a random key to produce a symmetric key, that the server uses to encrypt and the user to decrypt.
 18. **Ephemeral key**: Session keys that only last temporarily and change frequently.
@@ -28,40 +33,44 @@
 21. **Data-at-rest**: Data in a storage device.
 22. **Data-in-use**: Data being ran through RAM or CPU, is almost always decrypted to make it easier to use.
 23. **Random/pseudo-random**:
-    1. **Number generation**: Used to create random keys and salts, a computer is never truly random, so it relies on outside factors such as user input to create a more random number.
+     1. **Number generation**: Used to create random keys and salts, a computer is never truly random, so it relies on outside factors such as user input to create a more random number.
 24. **Key stretching**: Hashing a password, and then hashing that hashed value. Protects a weak password from brute force attacks.
 25. Implementation vs. algorithm selection:
-    1. **Crypto service provider**: A library of cryptographic standards and algorithms.
-    2. **Crypto modules**: Hardware, firmware or software that provides the hash, HMAC, cipher, decipher, sign, and verify methods.
+     1. **Crypto service provider**: A library of cryptographic standards and algorithms.
+     2. **Crypto modules**: Hardware, firmware or software that provides the hash, HMAC, cipher, decipher, sign, and verify methods.
 26. **Perfect forward secrecy** (PFS): Prevents point of failure where a stolen private key can decrypt all connections by generating a new key each session. Protects past sessions against future compromises of secret keys.
 27. **Security through obscurity**: Relying on secrecy to protect and secure data.
 28. Common use cases:
-    1. **Low power devices**: Mobile phones and portable devices.
-    2. **Low latency**: Low amount of time occurs between input and output.
-    3. **High resiliency**: Larger key sizes and encryption algorithm quality.
-    4. **Supporting confidentiality**: Secrecy and privacy.
-    5. **Supporting integrity**: Preventing modification of data and validating contents with hashes.
-    6. **Supporting obfuscation**:
-    7. **Supporting authentication**: Password hashing and protecting the original password.
-    8. **Supporting non-repudiation**: Digital signature provides: authenticity, integrity, and non-repudiation.
-    9. **Resource vs. security constraints**: Limitations in providing strong cryptography due to the amount of available resources (time and energy) vs the security provided by cryptography.
+     1. **Low power devices**: Mobile phones and portable devices.
+     2. **Low latency**: Low amount of time occurs between input and output.
+     3. **High resiliency**: Larger key sizes and encryption algorithm quality.
+     4. **Supporting confidentiality**: Secrecy and privacy.
+     5. **Supporting integrity**: Preventing modification of data and validating contents with hashes.
+     6. **Supporting obfuscation**:
+     7. **Supporting authentication**: Password hashing and protecting the original password.
+     8. **Supporting non-repudiation**: Digital signature provides: authenticity, integrity, and non-repudiation.
+     9. **Resource vs. security constraints**: Limitations in providing strong cryptography due to the amount of available resources (time and energy) vs the security provided by cryptography.
 
 ## <span style="color:#b381b3">6.2 Explain cryptography algorithms and their basic characteristics.</span>
 
 1. **Symmetric algorithms**:
     1. **AES** (Advanced Encryption Standard): Symmetric, block cipher with 128-bit blocks, key sizes of 128-bit, 192-bit and 256-bit. It utilizes the Rijndael algorithm and is the U.S. government standard for the secure exchange of sensitive but unclassified data. It is also the encryption standard used today with WPA2.
     2. **DES** (Data Encryption Standard): Symmetric, was common until replaced by AES, the block cipher is 64-bit and the key is 56-bit (very small), this means it can easily be brute forced.
-    3. **3DES**: Symmetric, very secure and upgrade over DES with three separate keys and three passes over data. Not used in modern day either.
+    3. **3DES**: Symmetric, very secure and upgrade over DES with three separate keys and three passes over data. Not used in modern day either.  
+        ![image-20201107003711929](s6_crypto_pki.assets/image-20201107003711929.png)
     4. **RC4**: Symmetric, part of the original WEP standard with SSL, removed from TLS, key sizes of 40-bit to 2048-bit. Deprecated from biased output.
     5. Blowfish/Twofish:
         1. **Blowfish**: Symmetric, fast and has variable key-lengths from 1-bit to 448-bits, uses 64-bit block cipher. Not limited by patents.
         2. **Twofish**: Symmetric, uses a very complex key structure up to 256-bits but still similar to predecessor, works using 128-bit blocks. Again, not limited by patents.
 2. Cipher modes:
-    1. **CBC** (Cipher Block Chaining): Symmetric, uses IV for randomization. Encryption that is dependent on the block before it. Slow.
+    1. **CBC** (Cipher Block Chaining): Symmetric, uses IV for randomization. Encryption that is dependent on the block before it. Slow.  
+       ![image-20201107003858521](s6_crypto_pki.assets/image-20201107003858521.png)
     2. **GCM** (Galois Counter Mode): Used by many. Provides data authenticity/integrity, hashes as well. Widely used.
-    3. **ECB** (Electronic Code Book): Mode of operation, simplest cipher mode, not recommended.
-    4. **CTR** (Counter Mode): Converts block into stream, uses IV. Widely used.
-    5. Stream vs. block:
+    3. **ECB** (Electronic Code Book): Mode of operation, simplest cipher mode, not recommended.  
+       ![image-20201107003751582](s6_crypto_pki.assets/image-20201107003751582.png)
+    4. **CTR** (Counter Mode): Converts block into stream, uses IV. Widely used.  
+       ![image-20201107003927541](s6_crypto_pki.assets/image-20201107003927541.png)
+    5. Stream vs. block: Stream ciphers encrypt data 1 bit at a time (High speed). Block ciphers encrypt data in blocks.
 3. **Asymmetric algorithms**:
     1. **RSA** (Rivest, Shamir, Adleman): First practical use of public key cryptography, uses large prime numbers as the basis for encryption.
     2. **DSA** (Digital Signature Algorithm): Standard for digital signatures and modifies Diffie-Hellman, follows usage of elliptic curves to create ECDSA.
@@ -82,8 +91,10 @@
     1. **Bcrypt**: Key Stretching that helps protect passwords by repeating Blowfish cipher.
     2. **PBKDF2** (Password-Based Key Derivation Function 2): Key Stretching, applies RSA function to password to create stronger key.
 6. **Obfuscation**: Making something unclear to read, but can still reverse it.
-    1. **XOR** (Exclusive OR): Mathematical operation that's a part of all symmetric operations, done by comparing bits of plaintext and a key (same=0, different=1). Can be reversed to get plaintext back.
-    2. **ROT13** (Rotate by 13): Common substitution cipher, rotates each letter 13 places.
+    1. **XOR** (Exclusive OR): Mathematical operation that's a part of all symmetric operations, done by comparing bits of plaintext and a key (same=0, different=1). Can be reversed to get plaintext back.  
+       ![image-20201107004802034](s6_crypto_pki.assets/image-20201107004802034.png)
+    2. **ROT13** (Rotate by 13): Common substitution cipher, rotates each letter 13 places.  
+       ![image-20201107002332334](s6_crypto_pki.assets/image-20201107002332334.png)
     3. **Substitution ciphers**: Cipher that changes one symbol for another, like the Caesar Cipher. Easy to decrypt.
 
 ## <span style="color:#b381b3">6.3 Given a scenario, install and configure wireless security settings.</span>
