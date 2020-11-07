@@ -1,7 +1,5 @@
 # [WIP] CompTIA SY0-501 Security+ Study Notes
 
-
-
 ## Sections
 
 * [1.0 Threats, Attacks and Vulnerabilities 21%](s1_threats_attacks_vulns.md)
