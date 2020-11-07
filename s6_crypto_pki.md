@@ -96,6 +96,12 @@
     2. **ROT13** (Rotate by 13): Common substitution cipher, rotates each letter 13 places.  
        ![image-20201107002332334](s6_crypto_pki.assets/image-20201107002332334.png)
     3. **Substitution ciphers**: Cipher that changes one symbol for another, like the Caesar Cipher. Easy to decrypt.
+7. **Cipher suites**: A set of information that helps determine how your web server will communicate secure data over HTTPS.  
+    ![image-20201107122726659](s6_crypto_pki.assets/image-20201107122726659.png)
+    1. **Key exchange algorithms**: Protect information required to create shared keys. They are asymmetric and perform well for relatively small amounts of data.
+    2. **Signature**: The client checks the authenticity of the certificate being presented by running a series of checks.
+    3. **Bulk encryption**: What will be used for the symmetric encryption that will occur during the HTTPS connection. (Block or Stream ciphers)
+    4. **Message authentication**: Generate message hashes and signatures that ensure the integrity of a message.
 
 ## <span style="color:#b381b3">6.3 Given a scenario, install and configure wireless security settings.</span>
 
