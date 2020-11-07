@@ -28,11 +28,11 @@
 
 1. Zones/topologies:
     1. **DMZ** (Demilitarized Zone): An additional layer of protection to protect one from the internet.  
-       ![image-20201104235042173](s3_architecture_design.assets/image-20201104235042173.png)
+       ![image-20201104235042173](assets/image-20201104235042173.png)
     2. **Extranet**: Private network that can only be accessed by authorized individuals. Links a company with its suppliers and customers.  
-       ![image-20201104235218657](s3_architecture_design.assets/image-20201104235218657.png)
+       ![image-20201104235218657](assets/image-20201104235218657.png)
     3. **Intranet**: A private network that exclusively for the use of the members of the organization, cannot be accessed by anyone outside the organization.  
-       ![image-20201104235250577](s3_architecture_design.assets/image-20201104235250577.png)
+       ![image-20201104235250577](assets/image-20201104235250577.png)
     4. **Wireless**: Generally, requires a login, an example is an internal wireless network at work.
     5. **Guest**: Network with access to the internet but no access to the internal network. Is useful in congested areas and is generally unsecured.
     6. **Honeynets**: Dummy Network to attract and fool attackers.
@@ -40,16 +40,16 @@
     8. **Ad hoc**: A wireless network without an access point, the connected devices communicate directly.
 2. **Segregation/segmentation/isolation**: Separation for performance, security, or compliance
     1. **Physical**: Devices are separate and cannot directly communicate unless physically connected. Does not scale well.  
-       ![image-20201104235442877](s3_architecture_design.assets/image-20201104235442877.png)
+       ![image-20201104235442877](assets/image-20201104235442877.png)
     2. **Logical** (VLAN): Separate areas are segmented for different networks, but still housed on the same switch. To connect them you need a layer 3 device, such as a router.  
-       ![image-20201104235508435](s3_architecture_design.assets/image-20201104235508435.png)
+       ![image-20201104235508435](assets/image-20201104235508435.png)
     3. **Virtualization**: The hardware to separate networks is virtualized, including routers, switches, and other devices apart from the infrastructure. Easier to manage from a security standpoint and everything can be segmented.
     4. Air gaps: Network where the devices are physically separate from another and don’t share any components to **communicate**. Great for security but be careful with removable media.
 3. **Tunneling/VPN**:
     1. **Site-to-site**: Send data between two sites in an encrypted form. Done by installing a VPN on both sides. Data will reach the VPN and encrypt and then the other VPN will decrypt it for the receiving end.  
-       ![image-20201104235602155](s3_architecture_design.assets/image-20201104235602155.png)
+       ![image-20201104235602155](assets/image-20201104235602155.png)
     2. **Remote access** (Host to Site): Software is installed on the device that wants the VPN tunnel, then the encrypted tunnel is created to connect to the specific network.  
-       ![image-20201104235636612](s3_architecture_design.assets/image-20201104235636612.png)
+       ![image-20201104235636612](assets/image-20201104235636612.png)
 4. Security device/technology placement:
     1. **Sensors**: Can give transactions, logs, or other raw data. Can be integrated or built-into switches, servers, firewalls, routers, or other network devices.
     2. **Collectors**: Could be a console or SIEM. Gathers all the data from sensors into one place and attempts to make sense of it.
@@ -59,11 +59,11 @@
     6. **Firewalls**: Is state-based so that it can filter by content and more specific perimeters. Placed on the outgoing and inward edges of the network.
     7. **VPN concentrators**: Authenticates VPN clients and establishes between tunnels.
     8. **SSL accelerators**: Offloads the SSL process to a hardware accelerator. SSL handshake is complicated and time consuming.  
-       ![image-20201104235901269](s3_architecture_design.assets/image-20201104235901269.png)
+       ![image-20201104235901269](assets/image-20201104235901269.png)
     9. **Load balancers**: Takes requests from the internet, and spreads the requests over multiple servers, can also determine the health of servers.
     10. **DDoS mitigator**: Sits between the network and the internet. Identifies and blocks DDOS attacks in real time.
     11. **Aggregation switch**: Uplinks to upper layer core switch and links down to the access switch.  
-        ![image-20201105000440508](s3_architecture_design.assets/image-20201105000440508.png)
+        ![image-20201105000440508](assets/image-20201105000440508.png)
     12. **Taps and port mirror**: Physical tap sees what is happening in traffic packets, and software port mirror sends a copy of the traffic packets. Is better for light traffic.
 5. **SDN** (Software Defined Networking): Aims to separate the hardware layer from the control. The network is fully virtualized with software, and then separated into the control (configuration) and data plane (forwarding and firewalling). Directly programmable from a central location, often automatically.
 
@@ -222,7 +222,7 @@
 9. **Fault tolerance**: The ability for the: network, system, or computer to provide a service while withstanding a certain level of failures. Aids in avoiding a single point of failure, a SPoF is anything that is mission critical.
 10. **High availability**: Refers to a system that is able to function for extended periods of time with little to no downtime.
 11. **RAID** (Redundant Array of Independent Disks): Is a high availability solution. Employs multiple hard drives in a storage volume with a level of drive loss protection, except for RAID 0.  
-     ![image-20201105000557222](s3_architecture_design.assets/image-20201105000557222.png)
+     ![image-20201105000557222](assets/image-20201105000557222.png)
 
 ## <span style="color:#d47500">3.9 Explain the importance of physical security controls.</span>
 

@@ -7,7 +7,7 @@
 3. **Crypto-malware**: A malicious program that encrypts programs and files on the computer in order to extort money from the user.
 4. **Ransomware**: Denies access to a computer system or data until a ransom is paid. Can be spread through a phishing email or unknowingly infected website.
 5. **Worm**: A self-contained infection that can spread itself through networks, emails, and messages.  
-![image-20201102200215476](s1_threats_attacks_vulns.assets/image-20201102200215476.png)
+![image-20201102200215476](assets/image-20201102200215476.png)
 6. **Trojan**: A form of malware that pretends to be a harmless application.
 7. **Rootkit**: A backdoor program that allows full remote access to a system.
 8. **Keylogger**: A malicious program that saves all of the keystrokes of the infected machine.
@@ -44,32 +44,32 @@
     2. **DDoS (Distributed Denial of Service)**: DoS launched from multiple sources.
     3. **Man-in-the-middle**: The attacker alters the communication between two parties who believe they are directly communicating.
     4. **Buffer overflow**: A program attempts to write more data than can be held in a fixed block of memory.  
-        ![image-20201102201101310](s1_threats_attacks_vulns.assets/image-20201102201101310.png)
+        ![image-20201102201101310](assets/image-20201102201101310.png)
     5. **Injection**: Occurs from processing invalid data, inserts code into the vulnerable computer program and changes the course of execution.
     6. **Cross-site scripting (XXS)**: Found in web applications, allows for an attacker to inject client-side scripts in web pages.
     7. **Cross-site request forgery (XSRF)**: Unauthorized commands are sent from a user that is trusted by the website. Allows the attacker to steal cookies and harvest passwords.
     8. **Privilege escalation**: An attack that exploits a vulnerability that allows them to  gain access to resources that they normally would be restricted from accessing.
     9. **ARP poisoning**: The act of falsifying the IP-to-MAC address resolution system employed by TCP/IP.
     10. **Amplification**: The amount of traffic sent by the attacker is originally small but then is repeatability multiplied to place a massive strain on the victim’s resources, in an attempt to cause it to fail or malfunction.  
-        ![image-20201102200518403](s1_threats_attacks_vulns.assets/image-20201102200518403.png)
+        ![image-20201102200518403](assets/image-20201102200518403.png)
     11. **DNS poisoning**: Is a type of attack that exploits vulnerabilities in the domain name system (DNS) to divert Internet traffic away from legitimate servers and towards fake ones.
     12. **Domain hijacking**: The act of changing the registration of a domain name without the permission of the victim.
     13. **Man-in-the-browser**: A proxy Trojan horse that infects web browsers and capture browser session data.
     14. **Zero day**: The aim is to exploit flaws or vulnerabilities in targeted systems that are unknown or undisclosed to the world in general. Meaning that there is no direct or specific defense to the attack; which puts most systems vulnerable assets at risk.
     15. **Replay**: Is a network-based attack where a valid data transmission is rebroadcasted, repeated, or delayed.  
-        ![image-20201102220406772](s1_threats_attacks_vulns.assets/image-20201102220406772.png)
+        ![image-20201102220406772](assets/image-20201102220406772.png)
     16. **Pass the hash**: An authentication attack that captures and uses the hash of a password. The attacker then attempts to log on as the user with the stolen hash. This type of attack is commonly associated with the Microsoft NTLM (New Technology LAN Manager) protocol.
     17. Hijacking and related attacks:
         1. **Clickjacking**: Deceives the user into clicking on a malicious link by adding the link to a transparent layer over what appears to be a legitimate web page.
         2. **Session hijacking**: An attack in which an attacker attempts to impersonate the user by using their legitimate session token.  
-        ![image-20201102220929730](s1_threats_attacks_vulns.assets/image-20201102220929730.png)
-        3. **URL hijacking**: Redirects the user to a false website based on misspelling the URL, is also referred to **typosquatting**.
+        ![image-20201102220929730](assets/image-20201102220929730.png)
+        1. **URL hijacking**: Redirects the user to a false website based on misspelling the URL, is also referred to **typosquatting**.
     18. **Driver manipulation**:
         1. **Shimming**: The process of injecting alternate or compensation code into a system in order to alter its operations without changing the original or existing code.
         2. **Refactoring**: Rewrites the internal processing of code without changing its behavior.
     19. **MAC spoofing**: The attacker falsifies the MAC address of a device.
     20. **IP spoofing**: An intruder uses another site's IP address to masquerade as a legitimate site.  
-        ![image-20201102221145459](s1_threats_attacks_vulns.assets/image-20201102221145459.png)
+        ![image-20201102221145459](assets/image-20201102221145459.png)
 3. Wireless attacks:
     1. **Replay**: This is a passive attack where the attacker captures wireless data, records it, and then sends it on to the original recipient without them being aware of the attacker's presence.
     2. **IV (Initialization Vector)**: A random number used to increase security by reducing predictability and repeatability.

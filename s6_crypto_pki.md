@@ -5,20 +5,20 @@
 1. **Symmetric algorithms**: A shared secret key used by the sender and receiver to encrypt and decrypt.
 2. **Modes of operation**: An algorithm that uses a block cipher to provide security such as confidentiality or authenticity.
 3. **Asymmetric algorithms**: There is a shared public key and a private secret key. Public key encrypts and the private key decrypts, private key to sign and public key verify.  
-    ![image-20201107003300472](s6_crypto_pki.assets/image-20201107003300472.png)
-    ![image-20201107002818599](s6_crypto_pki.assets/image-20201107002818599.png)
+    ![image-20201107003300472](assets/image-20201107003300472.png)
+    ![image-20201107002818599](assets/image-20201107002818599.png)
 4. **Hashing**: An algorithm that creates a unique one-way encryption, not plaintext.
 5. Salt, IV, nonce:
     1. **Salt**: The adding of input to random data to function to make it more complicated. A small piece of data added to the end of a password when creating a hash.  
-       ![image-20201107003522154](s6_crypto_pki.assets/image-20201107003522154.png)
+       ![image-20201107003522154](assets/image-20201107003522154.png)
     2. **IV** (Initialization Vector): A random value used with an encryption key.
     3. **Nonce**: One-time use random value used for authentication.
 6. **Elliptic curve** (ECC): Great for low powered machines. Uses curves for encryption instead of large prime numbers.
 7. **Weak/deprecated algorithms**: Weak due to vulnerabilities (WEP) or weak key length (DES is on 56-bits) which is easy to brute force through.
 8. **Key exchange**: Securely sending keys back and forth. Out-of-Band where the key is sent over the phone, in person, or any other way offline. In-Band is sent over the internet encrypted.
 9. **Digital signatures**: Provides integrity, verifies that the original sender is actually the one who sent it. This can be done through asymmetric encryption, where there is a hash message then they will encrypt the hash using their private key, creating a digital signature that can only originate from them. To verify, the signature is decrypted with the public key, and the message is then hashed. If the two hashes match, then the digital signature is valid.  
-    ![image-20201107003354499](s6_crypto_pki.assets/image-20201107003354499.png)
-    ![image-20201107003408196](s6_crypto_pki.assets/image-20201107003408196.png)
+    ![image-20201107003354499](assets/image-20201107003354499.png)
+    ![image-20201107003408196](assets/image-20201107003408196.png)
 10. **Diffusion**: Changing one character causes the plaintext to drastically change the outputted cipher.
 11. **Confusion**: The cipher doesn’t look anything like the plain text.
 12. **Collision**: Two completely different pieces of data have the exact same hash.
@@ -57,19 +57,19 @@
     1. **AES** (Advanced Encryption Standard): Symmetric, block cipher with 128-bit blocks, key sizes of 128-bit, 192-bit and 256-bit. It utilizes the Rijndael algorithm and is the U.S. government standard for the secure exchange of sensitive but unclassified data. It is also the encryption standard used today with WPA2.
     2. **DES** (Data Encryption Standard): Symmetric, was common until replaced by AES, the block cipher is 64-bit and the key is 56-bit (very small), this means it can easily be brute forced.
     3. **3DES**: Symmetric, very secure and upgrade over DES with three separate keys and three passes over data. Not used in modern day either.  
-        ![image-20201107003711929](s6_crypto_pki.assets/image-20201107003711929.png)
+        ![image-20201107003711929](assets/image-20201107003711929.png)
     4. **RC4**: Symmetric, part of the original WEP standard with SSL, removed from TLS, key sizes of 40-bit to 2048-bit. Deprecated from biased output.
     5. Blowfish/Twofish:
         1. **Blowfish**: Symmetric, fast and has variable key-lengths from 1-bit to 448-bits, uses 64-bit block cipher. Not limited by patents.
         2. **Twofish**: Symmetric, uses a very complex key structure up to 256-bits but still similar to predecessor, works using 128-bit blocks. Again, not limited by patents.
 2. Cipher modes:
     1. **CBC** (Cipher Block Chaining): Symmetric, uses IV for randomization. Encryption that is dependent on the block before it. Slow.  
-       ![image-20201107003858521](s6_crypto_pki.assets/image-20201107003858521.png)
+       ![image-20201107003858521](assets/image-20201107003858521.png)
     2. **GCM** (Galois Counter Mode): Used by many. Provides data authenticity/integrity, hashes as well. Widely used.
     3. **ECB** (Electronic Code Book): Mode of operation, simplest cipher mode, not recommended.  
-       ![image-20201107003751582](s6_crypto_pki.assets/image-20201107003751582.png)
+       ![image-20201107003751582](assets/image-20201107003751582.png)
     4. **CTR** (Counter Mode): Converts block into stream, uses IV. Widely used.  
-       ![image-20201107003927541](s6_crypto_pki.assets/image-20201107003927541.png)
+       ![image-20201107003927541](assets/image-20201107003927541.png)
     5. Stream vs. block: Stream ciphers encrypt data 1 bit at a time (High speed). Block ciphers encrypt data in blocks.
 3. **Asymmetric algorithms**:
     1. **RSA** (Rivest, Shamir, Adleman): First practical use of public key cryptography, uses large prime numbers as the basis for encryption.
@@ -92,12 +92,12 @@
     2. **PBKDF2** (Password-Based Key Derivation Function 2): Key Stretching, applies RSA function to password to create stronger key.
 6. **Obfuscation**: Making something unclear to read, but can still reverse it.
     1. **XOR** (Exclusive OR): Mathematical operation that's a part of all symmetric operations, done by comparing bits of plaintext and a key (same=0, different=1). Can be reversed to get plaintext back.  
-       ![image-20201107004802034](s6_crypto_pki.assets/image-20201107004802034.png)
+       ![image-20201107004802034](assets/image-20201107004802034.png)
     2. **ROT13** (Rotate by 13): Common substitution cipher, rotates each letter 13 places.  
-       ![image-20201107002332334](s6_crypto_pki.assets/image-20201107002332334.png)
+       ![image-20201107002332334](assets/image-20201107002332334.png)
     3. **Substitution ciphers**: Cipher that changes one symbol for another, like the Caesar Cipher. Easy to decrypt.
 7. **Cipher suites**: A set of information that helps determine how your web server will communicate secure data over HTTPS.  
-    ![image-20201107122726659](s6_crypto_pki.assets/image-20201107122726659.png)
+    ![image-20201107122726659](assets/image-20201107122726659.png)
     1. **Key exchange algorithms**: Protect information required to create shared keys. They are asymmetric and perform well for relatively small amounts of data.
     2. **Signature**: The client checks the authenticity of the certificate being presented by running a series of checks.
     3. **Bulk encryption**: What will be used for the symmetric encryption that will occur during the HTTPS connection. (Block or Stream ciphers)

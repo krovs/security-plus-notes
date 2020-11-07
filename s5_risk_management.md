@@ -120,12 +120,12 @@
 3. **Backups**: Copies of data created to ensure that if the original data is lost or corrupted, it can be restored.
     1. Types:
         1. **Differential**: Backs up all the data that has changed or is different since the last full backup.  
-           ![image-20201105235718033](s5_risk_management.assets/image-20201105235718033.png)
+           ![image-20201105235718033](assets/image-20201105235718033.png)
         2. **Incremental**: Backs up all the data that has changed since the last full or incremental backup.  
-           ![image-20201105235655585](s5_risk_management.assets/image-20201105235655585.png)
+           ![image-20201105235655585](assets/image-20201105235655585.png)
         3. **Snapshots**: Captures the data at a point in time.
         4. **Full**: Backs up all the selected data.  
-    ![image-20201105235623075](s5_risk_management.assets/image-20201105235623075.png)
+    ![image-20201105235623075](assets/image-20201105235623075.png)
     2. Geographic considerations:
         1. **Off-site backups**: A copy of a backup should be stored in a separate location.
         2. **Distance**: Depends on the organization, the off-site location will be close or far away.
