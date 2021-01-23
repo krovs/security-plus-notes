@@ -1,4 +1,4 @@
-# Cheat Sheet
+# CheatSheet
 
 | **Symmetric** [Performance]                                  | **CipherType** | **Asymmetric** (Public Key) [Key Exchange]                   |
 | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ |

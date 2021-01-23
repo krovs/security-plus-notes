@@ -8,6 +8,7 @@
 * [4.0 Identity and Access Management 16%](s4_identity_access_manag)
 * [5.0 Risk Management 14%](s5_risk_management.md)
 * [6.0 Cryptography and PKI 12%](s6_crypto_pki.md)
+* [Cheatsheet](cheatsheet.md)
 
 ## Resources
 
