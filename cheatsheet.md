@@ -64,3 +64,13 @@
 | 443      | HTTPS/SSL |
 | UDP 1701 | L2TP      |
 | TCP 1723 | PPTP      |
+| 3389     | RD        |
+| 137      | NetBIOS   |
+
+|                                                              |                                                              |      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| BIA (Business Impact Analysis)                               | RTO (Recovery Time Objective) - The start of the interruption  and time to establish recovery and end when you can successfully release the service back to your users. |      |
+| MTTR (Mean Time to Recover) - The average time it takes to control and remediate a threat. | RPO (Recovery Point Objective) - Last available restore backup and the maximum time between backups being safely stored offsite. |      |
+| MTBF (Mean Time Before Recover) - The average time between failures. | SLA (Service level agreement) - Defines the level of service expected by a customer from a supplier, laying out the metrics by which that service is measured, and the remedies or penalties, if any. |      |
+| MTTF (Mean Time to Failure) - The length of time you can expect a device to remain in operation before it fails. |                                                              |      |
+
