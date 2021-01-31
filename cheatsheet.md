@@ -3,7 +3,7 @@
 | **Symmetric** [Performance]                                  | **CipherType** | **Asymmetric** (Public Key) [Key Exchange]                   |
 | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ |
 | Vernam (One Time Pad) Used in WWII in the German Enigma      | XOR            | RSA (Rivest, Shamir & Aldeman) - Uses large prime numbers. Encrypt/decrypt digital signatures. |
-| AES (Advanced Encryption Standard) [Rijndael] (128, 192, 256 bits) Used by WPA2. | Block          | DSA (Digital Signature Algorithm) - Modifies Diffie-Hellman for use in digital signatures. Combines with elliptic curves to create ECDSA. |
+| AES (Advanced Encryption Standard) [Rijndael] (128, 192, 256 bits) Used by WPA2. (Data at rest) | Block          | DSA (Digital Signature Algorithm) - Modifies Diffie-Hellman for use in digital signatures. Combines with elliptic curves to create ECDSA. |
 | DES (Data Encryption Standard) [Lucifer] (56 bits) Easily brute forced. | Block          | Diffie-Hellman Key Exchange (DH) - A standard for exchanging keys. Primarily used to send private keys over public networks. ECDHE (Elliptic Curve DH) Used for perfect forward secrecy. |
 | 3DES (2 keys - 112 bits & 3 keys - 168 bits) Not used today. | Block          | ECC (Elliptic Curve Cryptography) - Needs large integers composed of two or more large prime factors. Great for low powered machines bc uses less CPU. Uses curves instead of prime numbers. |
 | RC4 (Rivest Cipher 4) (40-2048 bits) Used by WEP and WPA.[deprecated] | Stream         | PGP (Pretty Good Privacy) - Used for emails and is used by IDEA algorithm; GPG(GNU Privacy Guard): A free version of PGP with sames specs. |
@@ -18,7 +18,7 @@
 | CTR (Counter Mode) - Converts block into stream, uses IV. Widely used. |                | ISAKMP (Internet Security Association and Key Management Protocol) - Used to negotiate and provide authenticated keying material for security associations in a protected manner |
 |                                                              |                | X.509 - A standard defining the format of public key certificates. Used in many Internet protocols, (TLS/SSL) and offline applications, like electronic signatures. Contains a public key and an identity, and is either signed by a CA or self-signed. |
 | **Wireless** [Crypto protocols]                              |                | Perfect Forward Secrecy (PFS) - Prevents point of failure where a stolen private key can decrypt all connections by generating a new key each session. Protects past sessions against future compromises of secret keys. |
-| WPA (Wi-Fi Protected Access) - Uses RC4 with TKIP. Replaced by WPA2. |                |                                                              |
+| WPA (Wi-Fi Protected Access) - Uses RC4 with TKIP. Replaced by WPA2. |                | S/MIME, or Secure/Multipurpose Internet Mail Extensions, is a technology that allows you to encrypt your emails. S/MIME is based on asymmetric  cryptography to protect your emails from unwanted access. |
 | WPA2 (WPA v2) - Uses CCMP for encryption and AES.            |                |                                                              |
 | CCMP (Counter Mode with Cipher Block Chaining Message Authentication Code Protocol) - Is based on 128-bit AES. |                |                                                              |
 | TKIP (Temporal Key Integrity Protocol) - Mixes a root key with an IV, a new key for each packet. Prevents replay attacks and protects against tampering. |                |                                                              |
@@ -38,34 +38,33 @@
 | Pinning: The application has hard-coded the server’s certificate into the application itself. |                | Intermediate CA (Intermediate Certificate Authority):  An entity that processes the CSR and verifies the authenticity of the  user on behalf of a CA. |
 |                                                              |                | CRL (Certificate Revocation List): A list of  certificates that are no longer valid, expired, or that have been revoked by the issuer. |
 | **Cert formats**                                             |                | CSR (Certificate Signing Request): A user request for a digital certificate. |
-| DER (Distinguished Encoding Rules): Are common and  designed for X.509 certificates, they are used to extend binary encoded  certificates. Cannot be edited by a plain text editor. Used with Java  commonly. |                | OCSP (Online Certificate Status Protocol): A request  and response protocol that obtains the serial number of the certificate  that is being validated and reviews revocation lists for the client. |
-| PEM (Privacy Enhanced Mail): Most common format in  which certificates are issued. Multiple certificates and the private key can be included in one file. The file is encoded ASCII. PEM file  extensions include .pem, .crt, .cer, and .key. Apache servers typically  use PEM-format files. |                | Certificate: Digitally signed statement that associates a public key to the corresponding private key. |
-| PFX: A precursor to P12, has the same usage. Administrators often use this to format on Windows to import and export certificates. |                | Object identifiers (OID): A serial number that authenticates a certificate. |
-| CER (Certificate File): May be encoded as binary DER or as ASCII PEM. |                |                                                              |
+| DER (Distinguished Encoding Rules): Are common and  designed for X.509 certificates, they are used to extend binary encoded  certificates. Cannot be edited by a plain text editor. Used with Java  commonly. Stores single certificates, certificate chains, or private keys. Uses either a .der or .cer extension. |                | OCSP (Online Certificate Status Protocol): A request  and response protocol that obtains the serial number of the certificate  that is being validated and reviews revocation lists for the client. |
+| PEM (Privacy Enhanced Mail): It may contain single certificates, certificate chains, or private keys. Comes in a number of different file extensions: .pem, .crt, .cer, and  .key. |                | Certificate: Digitally signed statement that associates a public key to the corresponding private key. |
+| CER (Certificate File): May be encoded as binary DER or as ASCII PEM. |                | Object identifiers (OID): A serial number that authenticates a certificate. |
 | P12: Is a PFX extension used in windows.                     |                |                                                              |
-| PKCS #12 (Public Key Cryptography Standards #12): Is  part of the RFC standard. Stores many types of certificates and can be  password protected. |                |                                                              |
+| PKCS #12 (Public Key Cryptography Standards #12): It may contain single certificates, certificate chains, or private keys, although in most cases it is used to store public/private key pairs.  Fully encrypt all the data in the file and require a password to open  them. Uses the extension .pfx or .p12. |                |                                                              |
 | RFC (Remote Function Call): A formal document describes the specifications for a particular technology, was drafted by the  Internet Engineering Task Force. |                |                                                              |
 | P7B: Is stored in Base64 ASCII, containing certificates and chains but not the private key. |                |                                                              |
 
-| **Port** | **Use**   |
-| -------- | --------- |
-| 21       | FTP       |
-| 22       | SSH       |
-| 23       | Telnet    |
-| 25       | SMTP      |
-| 49       | TACACS    |
-| 53       | DNS       |
-| 67-68    | DHCP      |
-| 80       | HTTP      |
-| 110      | POP3      |
-| 143      | IMAP4     |
-| 161      | SNMP      |
-| 389-636  | LDAP      |
-| 443      | HTTPS/SSL |
-| UDP 1701 | L2TP      |
-| TCP 1723 | PPTP      |
-| 3389     | RD        |
-| 137      | NetBIOS   |
+| **Port**                  | **Use**   |
+| ------------------------- | --------- |
+| 21                        | FTP       |
+| 22                        | SSH/SCP   |
+| 23                        | Telnet    |
+| 25                        | SMTP      |
+| 53                        | DNS       |
+| 67-68                     | DHCP      |
+| 80                        | HTTP      |
+| 110                       | POP3      |
+| 143                       | IMAP4     |
+| 161                       | SNMP      |
+| 389(default)-636(secured) | LDAP      |
+| 443                       | HTTPS/SSL |
+| UDP 1701                  | L2TP      |
+| TCP 1723                  | PPTP      |
+| 3389                      | RDP       |
+| 137                       | NetBIOS   |
+| UDP 123                   | NTP       |
 
 |                                                              |                                                              |      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
