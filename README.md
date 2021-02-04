@@ -1,4 +1,4 @@
-# [WIP] CompTIA SY0-501 Security+ Study Notes
+# CompTIA SY0-501 Security+ Study Notes
 
 ## Sections
 
