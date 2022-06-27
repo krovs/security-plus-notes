@@ -27,7 +27,7 @@
     4. **Tailgating**: Closely following individuals with keys to get access to secure areas. This is different from piggybacking, which similar to tailgating, refers to when a person tags along with another person who is authorized to gain entry into a restricted area.
     5. **Impersonation**: Taking on the identity of an individual to get access into the system or communications protocol.
     6. **Dumpster diving**: Going through a business’s or person’s trash to find thrown away valuable information or possessions.
-    7. **Shoulder surfing**: Watching/spying as a person enter information.
+    7. **Shoulder surfing**: Watching/spying as a person enters information.
     8. **Hoax**: False information that deceives the user into compromising security by making them believe they are at risk.
     9. **Watering hole attack**: A security attack that targets a specific highly secured group by infecting a commonly visited website by the group’s members.
     10. **Social engineering**: The practice of using social tactics to gain information from people or get people to do something.  
