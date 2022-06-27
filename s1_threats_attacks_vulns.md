@@ -73,7 +73,7 @@
 3. Wireless attacks:
     1. **Replay**: This is a passive attack where the attacker captures wireless data, records it, and then sends it on to the original recipient without them being aware of the attacker's presence.
     2. **IV (Initialization Vector)**: A random number used to increase security by reducing predictability and repeatability. Common attack vector for network attacks.
-    3. **Evil twin**: Has same SSID (Service Set Identifier) as the legitimete access point AP (access point). Once a user connects to it, all wireless traffic goes through it instead of the real AP.
+    3. **Evil twin**: Has same SSID (Service Set Identifier) as the legitimate access point AP (access point). Once a user connects to it, all wireless traffic goes through it instead of the real AP.
     4. **Rogue AP (Access Point)**: An unauthorized WAP (Wireless Access Point) or Wireless Router that allows for attackers to bypass many of the network security configurations and opens the network and its users to attacks.
     5. **Jamming**: Disabling a wireless frequency with noise to block the wireless traffic.
     6. **WPS (WiFi Protected Setup)**: Allows users to easily configure a wireless network, sometimes by using only a PIN. The PIN can be found through a brute force attack.
