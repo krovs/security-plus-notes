@@ -47,8 +47,8 @@
 | P7B: Is stored in Base64 ASCII, containing certificates and chains but not the private key. |                |                                                              |
 
 | **Port**                  | **Use**   |
-| ------------------------- | --------- |
-| 21                        | FTP       |
+|---------------------------| --------- |
+| 20-21                     | FTP       |
 | 22                        | SSH/SCP   |
 | 23                        | Telnet    |
 | 25                        | SMTP      |
@@ -66,10 +66,10 @@
 | 137                       | NetBIOS   |
 | UDP 123                   | NTP       |
 
-|                                                              |                                                              |      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
-| BIA (Business Impact Analysis)                               | RTO (Recovery Time Objective) - The start of the interruption  and time to establish recovery and end when you can successfully release the service back to your users. |      |
+|                                                                                            |                                                              |      |
+|--------------------------------------------------------------------------------------------| ------------------------------------------------------------ | ---- |
+| BIA (Business Impact Analysis)                                                             | RTO (Recovery Time Objective) - The start of the interruption  and time to establish recovery and end when you can successfully release the service back to your users. |      |
 | MTTR (Mean Time to Recover) - The average time it takes to control and remediate a threat. | RPO (Recovery Point Objective) - Last available restore backup and the maximum time between backups being safely stored offsite. |      |
-| MTBF (Mean Time Before Recover) - The average time between failures. | SLA (Service level agreement) - Defines the level of service expected by a customer from a supplier, laying out the metrics by which that service is measured, and the remedies or penalties, if any. |      |
-| MTTF (Mean Time to Failure) - The length of time you can expect a device to remain in operation before it fails. |                                                              |      |
+| MTBF (Mean Time Before Recover) - The average time between failures.                       | SLA (Service level agreement) - Defines the level of service expected by a customer from a supplier, laying out the metrics by which that service is measured, and the remedies or penalties, if any. |      |
+| MTTF (Mean Time to Failure) - The average time until the device is expected to fail.       |                                                              |      |
 
