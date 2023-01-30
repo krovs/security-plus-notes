@@ -4,7 +4,7 @@
 
 1. **Malware**: A malicious software that performs bad functions to our computer or other devices on the network.
 2. **Viruses**: An unsolicited and unwanted malicious program that can reproduce itself.
-3. **Crypto-malware**: A malicious program that encrypts programs and files on the computer in order to extort money from the user.
+3. **Crypto-malware**: A program that installs without the user being aware of it and designed to use system resources to mine cryptocurrency.
 4. **Ransomware**: Denies access to a computer system or data until a ransom is paid. Can be spread through a phishing email or unknowingly infected website.
 5. **Worm**: A self-contained infection that can spread itself through networks, emails, and messages.  
 ![image-20201102200215476](assets/image-20201102200215476.png)
