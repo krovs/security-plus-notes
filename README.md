@@ -9,6 +9,8 @@ CompTIA Security+ focuses on five major cybersecurity domains. Each domain and t
 | Implementation	                    | 25%                      |
 | Operations and Incident Response	    | 16%                      |
 | Governance, Risk, and Compliance    	| 14%                      |   
+
+
 📋 Exam Structure
 Maximum of 90 questions
 Questions are multiple-choice and performance-based (using simulations of things like firewalls, networks diagrams, or operating systems)
