@@ -12,8 +12,7 @@
 
 ## Resources
 
-* [Professor Messer’s CompTIA SY0-501 Security+ Course](https://www.professormesser.com/security-plus/sy0-501/sy0-501-training-course/)
-* [Professor Messer's Practice Exams & Course Notes](https://www.professormesser.com/sy0-501-security-plus-success-bundle/)
-* [Udemy - Practices Exams by Jason Dion](https://www.udemy.com/course/comptia-security-practice-exams/learn/)
-* [Darril Gibson's mobile app](https://play.google.com/store/apps/details?id=com.learnzapp.securityplus&referrer)
-* [Study Guide reddit post by /u/ASentientToaster](https://www.reddit.com/r/CompTIA/comments/ep2z14/comptia_security_study_guide/)
+* https://www.youtube.com/watch?v=9NE33fpQuw8&list=PLG49S3nxzAnkL2ulFS3132mOVKuzzBxA8
+* https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests
+* https://quizlet.com/139927897/security-flash-cards/
+
