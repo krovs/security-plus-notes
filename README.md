@@ -1,5 +1,20 @@
 # CompTIA SY0-501 Security+ Study Notes
+✔️ Exam Objectives (Domains)
+CompTIA Security+ focuses on five major cybersecurity domains. Each domain and the measure to which it is represented in the exam are listed as follows: [+]
 
+| Domain                                | Percentage of Examination|
+| --------------------- | -----------------------------------------|
+| Attacks, Threats, and Vulnerabilities	| 24%                      |
+| Architecture and Design	            | 21%                      |
+| Implementation	                    | 25%                      |
+| Operations and Incident Response	    | 16%                      |
+| Governance, Risk, and Compliance    	| 14%                      |   
+
+
+📋 Exam Structure
+Maximum of 90 questions
+Questions are multiple-choice and performance-based (using simulations of things like firewalls, networks diagrams, or operating systems)
+Passing score is 750 (on a scale of 100-900)
 ## Sections
 
 * [1.0 Threats, Attacks and Vulnerabilities 21%](s1_threats_attacks_vulns.md)
@@ -12,8 +27,7 @@
 
 ## Resources
 
-* [Professor Messer’s CompTIA SY0-501 Security+ Course](https://www.professormesser.com/security-plus/sy0-501/sy0-501-training-course/)
-* [Professor Messer's Practice Exams & Course Notes](https://www.professormesser.com/sy0-501-security-plus-success-bundle/)
-* [Udemy - Practices Exams by Jason Dion](https://www.udemy.com/course/comptia-security-practice-exams/learn/)
-* [Darril Gibson's mobile app](https://play.google.com/store/apps/details?id=com.learnzapp.securityplus&referrer)
-* [Study Guide reddit post by /u/ASentientToaster](https://www.reddit.com/r/CompTIA/comments/ep2z14/comptia_security_study_guide/)
+* https://www.youtube.com/watch?v=9NE33fpQuw8&list=PLG49S3nxzAnkL2ulFS3132mOVKuzzBxA8
+* https://www.examcompass.com/comptia/security-plus-certification/free-security-plus-practice-tests
+* https://quizlet.com/139927897/security-flash-cards/
+
