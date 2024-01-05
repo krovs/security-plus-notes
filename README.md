@@ -1,5 +1,17 @@
 # CompTIA SY0-501 Security+ Study Notes
+✔️ Exam Objectives (Domains)
+CompTIA Security+ focuses on five major cybersecurity domains. Each domain and the measure to which it is represented in the exam are listed as follows: [+]
 
+Domain	Percentage of Examination
+Attacks, Threats, and Vulnerabilities	24%
+Architecture and Design	21%
+Implementation	25%
+Operations and Incident Response	16%
+Governance, Risk, and Compliance	14%
+📋 Exam Structure
+Maximum of 90 questions
+Questions are multiple-choice and performance-based (using simulations of things like firewalls, networks diagrams, or operating systems)
+Passing score is 750 (on a scale of 100-900)
 ## Sections
 
 * [1.0 Threats, Attacks and Vulnerabilities 21%](s1_threats_attacks_vulns.md)
